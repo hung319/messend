@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi tin nhắn cho tôi</title>
+</head>
+<body>
+    <h1>Gửi tin nhắn cho tôi</h1>
+    
+    <!-- Form để người dùng nhập tin nhắn -->
+    <form action="submit_message.php" method="post">
+        <label for="message">Tin nhắn của bạn:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Gửi tin nhắn">
+    </form>
+
+    <hr>
+
+    <!-- Phần để hiển thị tin nhắn đã gửi -->
+    <h2>Tin nhắn đã gửi:</h2>
+    <div id="message_list">
+        <!-- Tin nhắn sẽ được hiển thị ở đây -->
+    </div>
+</body>
+</html>
