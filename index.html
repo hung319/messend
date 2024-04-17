@@ -1,20 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Messaging App</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="container">
-  <h1>Simple Messaging App</h1>
-  <form id="message-form">
-    <input type="text" id="message-input" placeholder="Type your message">
-    <button type="submit">Send</button>
-  </form>
-  <div id="messages-container"></div>
+<div class="min-h-screen flex flex-col">
+
+  <div class="bg-zinc-800 text-white p-4">
+    <h1 class="text-xl">Messaging App</h1>
+  </div>
+
+  <div class="flex flex-1">
+
+    <div class="w-64 bg-zinc-100 p-4 hidden md:block">
+      <ul>
+        <li class="mb-2 p-2 bg-zinc-200 rounded">Chat 1</li>
+        <li class="mb-2 p-2 bg-zinc-200 rounded">Chat 2</li>
+        <li class="mb-2 p-2 bg-zinc-200 rounded">Chat 3</li>
+      </ul>
+    </div>
+
+    <div class="flex-1 flex flex-col">
+
+      <div class="flex-1 p-4 overflow-y-scroll">
+        <div class="mb-4 p-2 bg-blue-500 text-white rounded-lg max-w-xs">Hello!</div>
+        <div class="mb-4 p-2 bg-green-500 text-white rounded-lg max-w-xs self-end">Hi there!</div>
+      </div>
+
+      <div class="p-4">
+        <form class="flex">
+          <input type="text" class="flex-1 p-2 rounded-l-lg" placeholder="Type a message...">
+          <button class="bg-blue-500 text-white p-2 rounded-r-lg">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
-<script src="script.js"></script>
-</body>
-</html>
