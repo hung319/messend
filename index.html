@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gửi tin nhắn cho tôi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gửi tin nhắn cho tôi</h1>
-    
-    <!-- Form để người dùng nhập tin nhắn -->
-    <form action="submit_message.php" method="post">
-        <label for="message">Tin nhắn của bạn:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-        <input type="submit" value="Gửi tin nhắn">
-    </form>
-
-    <hr>
-
-    <!-- Phần để hiển thị tin nhắn đã gửi -->
-    <h2>Tin nhắn đã gửi:</h2>
-    <div id="message_list">
-        <!-- Tin nhắn sẽ được hiển thị ở đây -->
-    </div>
+  <div class="container">
+    <h1>Message App</h1>
+    <input type="text" id="recipient" placeholder="Recipient's email">
+    <textarea id="message" placeholder="Enter your message"></textarea>
+    <button id="sendButton">Send</button>
+    <div id="response"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
