@@ -1,0 +1,12 @@
+name: Trigger from external
+
+on:
+  repository_dispatch:
+    types: [trigger-cron]
+
+jobs:
+  do-something:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Yuu Onii-chan~ Cronjob chạy rồi nè~!"
